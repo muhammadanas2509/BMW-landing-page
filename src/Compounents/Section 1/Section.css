@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+
+   
+  }
+  
+  .card1,
+  .card2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49.9%; /* Default for larger screens */
+    height: 750px;
+    position: relative;
+    /* border-radius: 10px; Optional for rounded corners */
+    overflow: hidden; /* Ensures content doesn't overflow the cards */
+  }
+  
+  .text {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Improves text visibility */
+  }
+  
+  .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .text button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .text button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .card1 {
+    background-image: url('../../assets/S1 Card1.jpg'); /* Update path accordingly */
+  }
+  
+  .card2 {
+    background-image: url('../../assets/S1 Crad2.webp'); /* Update path accordingly */
+  }
+  
+  /* Responsive Design for Tablets */
+  @media (max-width: 1024px) {
+    .card1,
+    .card2 {
+      height: 600px;
+    }
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .card1,
+    .card2 {
+      width: 100%; /* Cards stack vertically */
+      height: 460px; /* Adjust height for smaller screens */
+    }
+  
+    .text {
+      top: 78%; /* Adjust text position */
+      transform: translateY(-50%);
+    }
+  
+    .text h1 {
+      font-size: 2rem;
+    }
+  
+    .text h2 {
+      font-size: 1.2rem;
+    }
+  
+    .text button {
+      font-size: 1rem;
+      padding: 8px 20px;
+    }
+  }
+  

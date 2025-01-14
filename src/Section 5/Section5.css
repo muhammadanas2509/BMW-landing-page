@@ -1,0 +1,11 @@
+@media screen and (max-width:450px) {
+    .GridColOption {
+      display: flex;
+      align-items: center;
+      gap: 4px
+    }
+  
+    .GridColOption>div {
+      margin-bottom: 0px !important;
+    }
+  }
