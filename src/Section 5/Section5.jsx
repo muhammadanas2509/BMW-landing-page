@@ -22,7 +22,7 @@ const Section5 = () => {
               <div style={{backgroundColor:"#6e6e6e",width:"100%",height:273, }}> <video > <source style={{height:"272"}}  autoPlay
           loop
           muted
-          playsInline src='https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/podcast-teaser/gamechanger/gm-00-teaser-hd.mp4' /> </video> </div>
+          playsInline src='' /> </video> </div>
             </Grid2>
             <Grid2 size={{xs:12,md:4,sm:12}}>
               <div style={{backgroundColor:"#6e6e6e",width:"100%",height:273, }}>size=4</div>
